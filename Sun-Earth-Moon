@@ -68,9 +68,9 @@ print("Days: ",days)
 print("Seconds: ",seconds)
 
 v = vector(0.5,0,0)
-E = sphere(pos=vector(3,0,0),color=color.cyan,radius=.3,make_trail=True)
-M = sphere(pos=E.pos+v,color=color.white,radius=0.1,make_trail=True)
-S = sphere(pos=vector(0,0,0),color=color.yellow,radius=1)
+E = sphere(pos=vector(3,0,0),texture=textures.earth,radius=.3,make_trail=True)
+M = sphere(pos=E.pos+v,texture = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Moon_texture.jpg/2560px-Moon_texture.jpg",radius=0.1,make_trail=True)
+S = sphere(pos=vector(0,0,0),texture = "https://i.imgur.com/XdRTvzj.jpeg",radius=1)
 
 t = 0
 thetaTerra1 = 0
