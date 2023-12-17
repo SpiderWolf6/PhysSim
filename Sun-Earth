@@ -9,7 +9,6 @@ totDots=gdots(color=color.purple, graph=g1)
 
 G = 6.67e-11
 
-v = vector(3.8e8, 0, 0)
 sun = sphere(pos = vector(0, 0, 0), radius = 12e9, texture = "https://i.imgur.com/XdRTvzj.jpeg", shininess = 0, make_trail = True);
 earth = sphere(pos = vector(1.5e11, 0, 0), radius = 6.37e9, texture=textures.earth, make_trail = True, interval=10, retain=50);
 
