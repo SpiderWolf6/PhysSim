@@ -34,7 +34,8 @@ def gravity(star, satellite):
     force = -(G*satellite.mass*star.mass/(rad.mag*rad.mag))*rad.hat
     return force
 
-
+day = 3600*24
+counter = 0
 t=0; dt=3600
     
 while((earth.pos-sun.pos).mag>(earth.radius+sun.radius)):
@@ -56,4 +57,7 @@ while((earth.pos-sun.pos).mag>(earth.radius+sun.radius)):
     uDots.plot(t, potential)
     totDots.plot(t, kinetic - potential)
     t = t+dt
-    
+
+    if t % day == 0:
+        counter = counter + 1
+        print(counter)
